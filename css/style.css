@@ -1,0 +1,610 @@
+:root {
+    --white: #FFF;
+    --iris: #4D5AE5;
+    --cloud: #F4F4FD;
+    --slate: #434455;
+    --ocean: #404BBF;
+    --navyblue: #2E2F42;
+    --cornflower: #E7E9FC;
+    --light-green: #31d0aa;
+}
+
+/* Checked */
+body {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    font-family: "Roboto", sans-serif;
+
+    color: var(--white);
+    background-color: var(--white);
+}
+
+/* Checked */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+/* Checked */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+/* Checked */
+html {
+    box-sizing: border-box;
+}
+
+/* Checked */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Checked */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Checked */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Checked */
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Checked */
+.section {
+    padding: 120px 0px;
+    /* shorthand */
+}
+
+/* Checked */
+.section.no-top-padding {
+    padding-top: 0;
+}
+
+/* Checked */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+/* Checked */
+.page-header {
+    border-bottom: 1px solid var(--cornflower);
+}
+
+/* NAVIGATION CSS */
+/* Checked */
+.menu,
+.navigation,
+.nav-menu,
+.contacts-menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Checked */
+.nav-menu {
+    margin-left: 93px;
+}
+
+/* Checked */
+.nav-menu .item:not(:last-child),
+.contacts-menu .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+/* Checked */
+.contacts-menu {
+    margin-left: auto;
+}
+
+
+/* I combined  the .page / .item since 
+same property and the font property inherit form global body decleration*/
+/* Checked */
+.nav-menu .page,
+.contacts-menu .contact {
+    font-weight: 500;
+    line-height: 1.14;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    color: var(--navyblue);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 31px;
+}
+
+/* Checked */
+.nav-menu .page:hover,
+.nav-menu .page:focus,
+.nav-menu .current,
+.contacts-menu .contact:hover,
+.contacts-menu .contact:focus {
+    color: var(--iris);
+}
+
+/* LOGO CSS */
+/* Checked */
+.logo-link {
+    text-decoration: none;
+    font-size: 0;
+}
+
+/* Checked */
+.logo-link>span {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.2;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+}
+
+/* Checked */
+.logo {
+    color: var(--iris);
+}
+
+/* Checked */
+.studio {
+    color: var(--navyblue);
+}
+
+/* Checked */
+.hero {
+    text-align: center;
+    padding: 200px 0;
+}
+
+.bg-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.78),
+            rgba(46, 47, 66, 0.78)),
+        url(../images/hero-image-bg.jpg);
+
+    background-size: cover;
+}
+
+/* Header 1 */
+/* Checked */
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
+}
+
+/* Checked */
+.button {
+    font-family: inherit;
+    border-color: transparent;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Checked */
+.button.primary {
+    background-color: var(--iris);
+    color: var(--white);
+    font-weight: 500;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.15);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+    border-radius: 4px;
+    background: var(--ocean);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+/* checked */
+.button.filter {
+    color: var(--iris);
+    background-color: var(--cloud);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    padding: 12px 24px;
+}
+
+/* checked */
+.button.filter.current,
+.button.filter:hover,
+.button.filter:focus {
+    color: var(--white);
+    background-color: var(--ocean);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1) 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*    SECTION-1 */
+/* Checked */
+.section-title {
+    /* Header 2 */
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--navyblue);
+    margin-bottom: 50px;
+}
+
+/* Checked */
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+/* Checked */
+.benefits .item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/* Checked */
+.benefits .title {
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.14;
+    margin-bottom: 10px;
+}
+
+
+
+/* Checked */
+.benefits .description {
+    line-height: 1.71;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--slate);
+}
+
+
+/* |SECTION-2  */
+/* Checked */
+.what-we-do {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+/* Checked */
+.what-we-do .item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/* | SECTION-3 CSS */
+.bg-team {
+    background-color: var(--cloud);
+}
+
+/* Checked */
+.team .name,
+.team .position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--navyblue);
+}
+
+
+/* Checked */
+.team .name {
+    font-weight: 500;
+    color: var(--navyblue);
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+/* Checked */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+/* Checked */
+.team .item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--white);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12) 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.12);
+}
+
+/*-------------------------------------------------------------------*/
+/*                     PORTFOLIO CSS                                 */
+/*-------------------------------------------------------------------*/
+/* Checked */
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* Checked */
+.filters .space+.space {
+    margin-left: 8px;
+
+}
+
+/* Checked */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+    /* cursor: pointer; */
+}
+
+/* Checked */
+.project-card {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/* Checked */
+.projects .name {
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--navyblue);
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+/* Checked */
+.projects .type {
+    color: var(--slate);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+/* Checked */
+.substrate {
+    background-color: var(--white);
+    padding: 20px 24px;
+    border-top: 0;
+    border: 1px solid var(--cornflower);
+}
+
+/*-------------------------------------------------------------------*/
+/*                         FOOTER CSS                                */
+/*-------------------------------------------------------------------*/
+.page-footer {
+    padding: 60px 0;
+}
+
+/* Checked */
+.bg-footer {
+    background: var(--navyblue);
+}
+
+
+/* Checked */
+.studio-2 {
+    color: var(--cloud);
+}
+
+
+/* Checked */
+.footer-description {
+    color: var(--cloud);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-top: 17px;
+}
+
+
+
+
+
+/*  */
+.team {
+    margin-left: -30px;
+    margin-top: -30px;
+    display: flex;
+}
+
+
+.social-team .icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.social-team {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 24px;
+}
+
+.social-team .link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--cloud);
+    background-color: var(--iris);
+}
+
+
+
+
+/* 
+.icon-item {
+    width: 40px;
+    height: 40px;
+} */
+.partners {
+    display: flex;
+    gap: 30px;
+}
+
+.partners .item {
+    width: calc((100% - 150px) / 6);
+    height: 90px;
+}
+
+.partners .link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    color: #8e8f99;
+    /* color: blue; */
+}
+
+.partners .link:hover,
+.partners .link:focus {
+    border-radius: 4px;
+    border: 1px solid var(--ocean);
+
+}
+
+
+.partners .icon {
+    fill: currentColor;
+}
+
+.partners .item svg:hover,
+.partners .item svg:focus {
+    color: var(--ocean);
+}
+
+.icon-item {
+    width: 40px;
+    height: 40px;
+}
+
+.bg-green .link:hover,
+.bg-green .link:focus {
+    background-color: var(--light-green);
+}
+
+.icon-item .link:hover,
+.icon-item .link:focus {
+    background-color: var(--ocean);
+}
+
+.item .cons:hover,
+.item .cons:focus {
+    background-color: var(--ocean);
+}
+
+.bg-green .link:hover,
+.bg-green .link:focus {
+    background-color: var(--light-green);
+}
+
+.benefits .icon {
+    display: flex;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    width: 264px;
+    height: 120px;
+    background-color: var(--cloud);
+    justify-content: center;
+    align-items: center;
+    padding: 24px 100px;
+}
+
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -12px;
+    margin-left: -50px;
+    align-items: baseline;
+    gap: 120px;
+}
+
+.footer .column {
+    margin-top: 12px;
+    margin-left: 25px;
+}
+
+.footer-heading {
+    color: inherit;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.32px;
+}
+
+.social-footer {
+    padding-top: 16px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.social-footer .link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--cloud);
+    background-color: var(--iris);
+}
+
+.social-footer .icon {
+    fill: currentColor;
+}
+
+
+
+.item .icon:hover,
+.item .icon:focus {}

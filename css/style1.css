@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+    --primary-text-color: #434455;
+    --accent-color: #4d5ae5;
+    --primary-white-color: #ffffff;
+    --primary-black-color: #2e2f42;
+    --logo-black: #000000;
+    --text-white-opacity: rgba(255, 255, 255, 0.6);
+    --button-primary-hover: #404bbf;
+    --button-filter: #f5f4fa;
+    --background-black: #2f303a;
+    --background-grey: #f5f4fa;
+    --cloud: #f4f4fd;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* Checked */
+.section.no-top-padding {
+    padding-top: 0;
+}
+
+/* Checked */
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Checked */
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Checked */
+.menu,
+.navigation,
+.nav-menu,
+.contacts-menu {
+    display: flex;
+    align-items: center;
+}
+
+/* header and navigation */
+/* Checked */
+.logo-link {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 0;
+    line-height: 1.2;
+}
+
+.logo-link>span {
+    font-size: 18px;
+}
+
+/* Checked */
+.logo {
+    color: #4d5ae5;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.2;
+}
+
+/* Checked */
+.logo.footer {
+    margin-bottom: 20px;
+}
+
+/* header styling */
+/* Checked */
+.studio {
+    color: #2e2f42;
+    font-weight: 800;
+    text-indent: 30px;
+}
+
+/* footer styling */
+/* Checked */
+.studio2 {
+    color: var(--primary-white-color);
+    font-weight: 800;
+    font-size: 18px;
+}
+
+/* Navigation Menu Positioning */
+/* Checked */
+.nav-menu {
+    margin-left: 93px;
+}
+
+.nav-menu .page:hover,
+.nav-menu .page:focus,
+.nav-menu .page.current,
+.contacts-menu .contact:hover,
+.contacts-menu .contact:focus {
+    color: var(--accent-color);
+}
+
+/* Checked */
+.page-header {
+    border-bottom: 1px solid #ececec;
+}
+
+/* Checked */
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    margin: 0 auto;
+    background-color: var(--primary-black-color);
+}
+
+/* Contacts Menu Positioning */
+.contacts-menu {
+    margin-left: auto;
+}
+
+/* Checked */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.78),
+            rgba(46, 47, 66, 0.78)),
+        url(../images/people-office1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Checked */
+.nav-menu .item:not(:last-child),
+.contacts-menu .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+/* Checked */
+.nav-menu .page,
+.contacts-menu .contact {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 31px;
+    color: var(--primary-black-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/* Checked */
+.contacts-menu .contact {
+    color: var(--primary-black-color);
+    font-weight: 400;
+}
+
+/* Styling for H1 */
+/* Checked */
+.hero-title {
+    color: var(--primary-white-color);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
+}
+
+/* button styling and positioning index.html */
+/* Checked */
+.button {
+    cursor: pointer;
+    border-color: transparent;
+    font-family: inherit;
+    /* to inherit the font */
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+}
+
+/* Chedked */
+.button.primary {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* button pseudoclass */
+/* Checked */
+.button.primary:hover,
+.button.primary:focus {
+    background-color: var(--button-primary-hover);
+}
+
+/* button styling portfolio.html */
+/* Checked */
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* Checked */
+.filters .space+.space {
+    margin-left: 8px;
+}
+
+/* Checked */
+.button.filter {
+    background-color: var(--button-filter);
+    color: var(--primary-black-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    padding: 6px 22px;
+}
+
+/* Checked */
+.button.filter:hover,
+.button.filter:focus,
+.button.filter.current {
+    background-color: var(--button-primary-hover);
+    color: var(--button-filter);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1) 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* list styling index.html */
+/* Checked */
+.benefits .title {
+    color: var(--primary-black-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.14;
+    margin-bottom: 10px;
+}
+
+/* Checked */
+.benefits .description {
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* list and icon positioning index.html */
+/* Checked */
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.benefits .item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.benefits .icon {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    width: 264px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cloud);
+}
+
+/* H2 styling portfolio.html */
+/* Checked */
+.section-title {
+    color: var(--navyblue, #2e2f42);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-bottom: 50px;
+}
+
+/* image positioning index.html */
+/* Checked */
+.what-we-do {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+/* Checked */
+.what-we-do .item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+/* Our Team styling portfolio.html */
+/* Checked */
+.bg-team {
+    background-color: var(--background-grey);
+}
+
+/* Checked */
+.team .name,
+.team .position {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.19;
+    text-align: center;
+}
+
+/* Checked */
+.substrate {
+    background-color: var(--primary-white-color);
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: 0;
+}
+
+/* Checked */
+.team .name {
+    color: var(--primary-black-color);
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.team .item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+    padding-bottom: 30px;
+    background-color: var(--primary-white-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px, 1px, 1px rgba(0, 0, 0, 0.14),
+        0px, 2px, 1px rgba(0, 0, 0, 0.12);
+}
+
+/* Our Team Images positioning*/
+/* Checked */
+.team {
+    margin-left: -30px;
+    margin-top: -30px;
+    display: flex;
+}
+
+/* Images positioning - portfolio.html */
+/* Checked */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+/* Checked */
+.project-card {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+/* Checked */
+.project .name {
+    margin-bottom: 4px;
+    color: var(--primary-black-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+/* Checked */
+.project .type {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+.partners {
+    display: flex;
+    gap: 30px;
+}
+
+.partners .item {
+    width: calc((100% - 150px) / 6);
+    height: 90px;
+}
+
+.partners .link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    color: #8e8f99;
+}
+
+.partners .link:hover,
+.partners .link:focus {
+    border-radius: 4px;
+    border: 10px solid red;
+    color: red;
+}
+
+.partners .icon {
+    fill: currentColor;
+}
+
+.icon-item {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-block {
+    margin-top: 12px;
+    margin-left: 123px;
+}
