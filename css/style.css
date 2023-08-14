@@ -139,6 +139,10 @@ same property and the font property inherit form global body decleration*/
     padding-bottom: 31px;
 }
 
+.contacts-menu .contact {
+    font-weight: 400;
+}
+
 /* Checked */
 .nav-menu .page:hover,
 .nav-menu .page:focus,
