@@ -178,6 +178,10 @@ same property and the font property inherit form global body decleration*/
     color: var(--navyblue);
 }
 
+span.studio2 {
+    color: white;
+}
+
 /* Checked */
 .hero {
     text-align: center;
@@ -247,9 +251,7 @@ same property and the font property inherit form global body decleration*/
     background-color: var(--ocean);
 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border: 1px solid var(--iris);
-    border-radius: 4px;
-    cursor: pointer;
+
 }
 
 /*    SECTION-1 */
@@ -390,6 +392,10 @@ same property and the font property inherit form global body decleration*/
     margin-left: 30px;
 }
 
+.project-card:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
 /* Checked */
 .projects .name {
     font-size: 20px;
@@ -488,9 +494,10 @@ same property and the font property inherit form global body decleration*/
 }
 
 .social-footer .icon {
+    margin-top: 25%;
+    margin-left: 20%;
     fill: currentColor;
 }
-
 
 .social-team .icon {
     width: 16px;
@@ -539,12 +546,12 @@ same property and the font property inherit form global body decleration*/
     justify-content: center;
     align-items: center;
     color: #8e8f99;
-    /* color: blue; */
 }
 
 .customer .link:hover,
 .customer .link:focus {
     border-radius: 4px;
+    color: var(--ocean);
     border: 1px solid var(--ocean);
 }
 
@@ -552,10 +559,6 @@ same property and the font property inherit form global body decleration*/
     fill: currentColor;
 }
 
-.customer .item svg:hover,
-.customer .item svg:focus {
-    color: var(--ocean);
-}
 
 .icon-item {
     width: 40px;
