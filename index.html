@@ -58,7 +58,9 @@
             Effective Solutions <br />
             for Your Business
           </h1>
-          <button type="button" class="button primary">Order Service</button>
+          <button type="button" class="button primary" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- Closed tag for hero section -->
@@ -560,7 +562,7 @@
 
           <!-- Footer Column 2 -->
           <div class="footer-column">
-            <b class="footer-heading">Social media</b>
+            <h3 class="footer-heading">Social media</h3>
             <ul class="social-footer list">
               <!-- Footer Svg Icon Instagram -->
               <li class="icon-item bg-green">
@@ -617,10 +619,34 @@
               </li>
             </ul>
           </div>
+
+          <!-- Footer Column 3 -->
+          <div class="footer-column">
+            <h3 class="footer-heading">Subcribe</h3>
+            <p class="footer-description">
+              Increase the flow of customers and <br />
+              sales for your business with digital <br />
+              marketing & growth solutions.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
     <!-- Close tag for footer -->
+
+    <!-- MODAL -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- MODAL SCRIPT -->
+    <script src="./js/modal.js"></script>
   </body>
   <!-- Close tag for body -->
 </html>
